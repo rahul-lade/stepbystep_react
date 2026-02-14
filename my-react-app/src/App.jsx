@@ -9,7 +9,7 @@ function App() {
 <h1>we are learning state</h1>
 <h1>{fruit}</h1>
 
-<button onClick={()=>setfruit("banana")}>change to banana</button> 
+<button onClick={()=>setfruit("bananana")}>change to banana</button> 
 
      </>
   )
