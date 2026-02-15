@@ -2,6 +2,7 @@
 import './App.css'
 import College from './College';
 import User from './User';
+import Wrapper from './Wrapper';
 
 
 function App() {
@@ -31,9 +32,16 @@ console.log(collegearray);
   return (
 
     <div>
-      props
-      <College name={collegearray}/>
-    </div>
+      <Wrapper color="orange">
+        <h1>hehe1</h1>
+      </Wrapper>    
+      <Wrapper color="yellow">
+        <h1>hehe2</h1>
+      </Wrapper>    
+      <Wrapper>
+        <h1>hehe3</h1>
+      </Wrapper>    
+      </div>
 
   )
 }
