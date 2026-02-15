@@ -1,9 +1,10 @@
+
 import './App.css'
+import College from './College';
 import User from './User';
 
 
 function App() {
-
 let name = "rahul";
 let age = 27;
 let email = "test@gmail.com";
@@ -23,13 +24,15 @@ let userObj2 = {
   age :27,
   email : "test@gmail.com"
 }
+
+
+const collegearray =['iit','nit','iiiiit','hdhdhd'];
+console.log(collegearray);
   return (
 
     <div>
       props
-      <User info={userObj} />
-      <User info={userObj1} />
-      <User info={userObj2} />
+      <College name={collegearray}/>
     </div>
 
   )
