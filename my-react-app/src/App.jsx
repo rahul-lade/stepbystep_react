@@ -1,15 +1,16 @@
 import './App.css'
 import React, { useState } from 'react'
+import User from './User';
 
 
 function App() {
-  const [fruit,setfruit] = useState("apple");
+  const [display,setdisplay] = useState(true);
+ 
   return (
     <>
-<h1>we are learning state</h1>
-<h1>{fruit}</h1>
-
-<button onClick={()=>setfruit("banannanaana")}>change to banana</button> 
+ <button onClick={()=>setdisplay(!display)}>hide</button>
+ {display && <h1><User/></h1> }
+  {display && <h1>we are learning state</h1>}
 
      </>
   )
