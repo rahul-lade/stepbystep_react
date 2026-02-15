@@ -1,12 +1,13 @@
 import React from 'react'
 
-const User = ({name,age,email}) => {
+const User = ({info}) => {
     // console.log(props)
   return (
     <div>
-        <div>{name} </div>
-        <div>{age} </div>
-        <div>{email} </div>
+        <hr />
+        <div>{info.name} </div>
+        <div>{info.age} </div>
+        <div>{info.email} </div>
     </div>
   )
 }
