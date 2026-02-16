@@ -35,17 +35,31 @@ function App() {
       // const [password, setpassword] = useState("");
       // const [email, setemail] = useState("");
 
-      
+      const UserArray = [{
+        name: "rahul",
+        age: 27,
+        email: "test@gmail.com"
+      },
+    {name: "virat",
+        age: 7,
+        email: "vir@gmail.com"},
+      {name: "SACHIN",
+        age: 237,
+        email: "scah@gmail.com"},
+      {name: "rohit",
+        age: 2,
+        email: "rohit@gmail.com"}]
       
   return (
 
 <div>
-    <h1>hi this is controlled component</h1>
-     <div>
-        <h3>Select Your Skills</h3>
-    </div>
-    <Skills />
-    
+    {UserArray.map((user, index)=>(
+      <tr key = {index}>
+         <td>{user.name}</td>
+        <td>{user.age}</td>
+        <td>{user.email}</td>
+      </tr>
+    ))}
     </div> 
 
   )
