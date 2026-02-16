@@ -1,9 +1,9 @@
 
-import { useState } from 'react';
 import './App.css'
 import College from './College';
 import User from './User';
 import Wrapper from './Wrapper';
+import Skills from './Skills';
 
 
 function App() {
@@ -31,28 +31,22 @@ function App() {
   // const collegearray = ['iit', 'nit', 'iiiiit', 'hdhdhd'];
   // console.log(collegearray);
 
-const [name, setname] = useState("");
-const [password, setpassword] = useState("");
-const [email, setemail] = useState("");
+      // const [name, setname] = useState("");
+      // const [password, setpassword] = useState("");
+      // const [email, setemail] = useState("");
+
+      
+      
   return (
 
-    <div>
+<div>
     <h1>hi this is controlled component</h1>
-    <form action="">
-      <input type="text" value={name} onChange={(e)=>{setname(e.target.value)}} placeholder='name...'/>
-      <h3>{name}</h3>
-      <br />
-      <input type="password" value={password} onChange={(e)=>{setpassword(e.target.value)}} placeholder='password...'/>
-      <h3>{password}</h3>
-      <br />
-      <input type="email" value={email} onChange={(e)=>{setemail(e.target.value)}} placeholder='email...'/>
-      <h3>{email}</h3>
-      <br />
-      <button onClick={()=>{(setname('')),setemail(''),setpassword('')} }>clear</button>
-    </form>
-    <button onClick={()=>{console.log(name,password,email)}}>submit</button>
-
+     <div>
+        <h3>Select Your Skills</h3>
     </div>
+    <Skills />
+    
+    </div> 
 
   )
 }
