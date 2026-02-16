@@ -4,6 +4,7 @@ import College from './College';
 import User from './User';
 import Wrapper from './Wrapper';
 import Skills from './Skills';
+import Map from './map';
 
 
 function App() {
@@ -53,12 +54,8 @@ function App() {
   return (
 
 <div>
-    {UserArray.map((user, index)=>(
-      <tr key = {index}>
-         <td>{user.name}</td>
-        <td>{user.age}</td>
-        <td>{user.email}</td>
-      </tr>
+    {UserArray.map((e)=>(
+      <Map usrrrer={e}/>
     ))}
     </div> 
 
